@@ -1,5 +1,6 @@
 package com.christine.goodhouse.controller;
 
+import com.christine.goodhouse.utils.RequestUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,7 +17,7 @@ public class EmployeeLoginContorller {
     public String login(Model model, HttpServletRequest request) {
         HttpSession session = request.getSession();
         try {
-//            model.addAttribute("errorMsg", "");
+            model.addAttribute("errorMsg", "");
 //            String ip = RequestUtils.getFisrtRemoteHost(request);
 //            account = accountService.login(account, ip);
 //            session.setAttribute(RequestUtils.SESSION_LOGIN_ATTR, account);
